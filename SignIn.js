@@ -1,0 +1,34 @@
+import { auth, db } from "./firebase-config.js";
+import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+import { doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  const signupForm = document.getElementById("signupForm");
+
+  signupForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+ 
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const name = document.getElementById("name").value;
+
+    try {
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+
+      // Save user info to Firestore
+      await setDoc(doc(db, "users", user.uid), {
+        name: name, 
+        email: email,
+        createdAt: serverTimestamp()
+      });
+
+      alert("User signed up successfully!");
+      window.location.href = "login.html";
+    } catch (error) {
+      alert("Error signing up: " + error.message);
+      console.error("Signup error:", error);
+    }
+  });
+});

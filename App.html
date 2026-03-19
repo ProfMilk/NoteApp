@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Main Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="background">
+
+    <div class="navbar">
+        <div>
+            <button class="topButton"><a href="Login.html">Login</a></button>
+            <button class="topButton"><a href="SignIn.html">Sign up</a></button> 
+        </div>
+    <h4 id="welcome"> Logged in as:_______ </h4>
+    </div>
+
+    <div class="MainContainer">
+        <div class="LeftContainer">
+        <div>
+            <h2> Modify task #: 
+            <select name="#" class="numdropdown">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select></h2> 
+        
+            <input class="textbox" type="text" name="textbox" required>
+            <br>
+            <button class="black_button">Modify Task</button>
+        </div>
+            <button class="black_button"> Previous page</button> 
+        </div>
+        <div class="MiddleContainer">
+            <h3>INPUT TO DO </h3>
+            <input class="textbox" type="text" id="userInput" r><br><br>
+            
+            <div class="toDo_box">
+                <h4 class="behind">NOTE|TAKERS</h4>
+                    <div>
+                        <ul>
+                            <il id="output">1. ___________________________________</il><br>
+                            <il>2. ___________________________________</il><br>
+                            <il>3. ___________________________________</il><br>
+                            <il>4. ___________________________________</il><br>
+                            <il>5. ___________________________________</il><br>
+                            <il>6. ___________________________________</il><br>
+                            <il>7. ___________________________________</il><br>
+                        </ul>
+                    </div>     
+            </div>
+            <button class="black_button"> Clear Checked Boxes</button>
+        </div>
+
+        <div class="RightContainer">
+            <button type="submit" class="black_button" id="submitBtn">Add To List</button>
+            <button class="black_button"> Next page</button> 
+        </div>
+
+    </div>
+    
+     
+    
+    <script type="module" src="App.js"></script>
+    <script type ="module" src="Login.js"></script>
+</body>
+</html>

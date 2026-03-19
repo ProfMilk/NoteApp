@@ -1,0 +1,218 @@
+/*Universal Code for all Pages*/
+body{
+  background-color: #E9DBBD;
+  font-family: Arial, sans-serif;
+}
+button{
+   background-color: #333333;
+   color: white;
+}
+p{
+  color: #333333;
+  font: 16px Arial, sans-serif;
+  
+}
+a{
+  color: white;
+}
+input{
+  background-color: #E9DBBD;
+  color: black;
+  padding:12px;
+}
+
+
+/*For App Page*/
+.toDo_box {
+  border: 1px solid #CBB682; /* Creates the visible box border */
+  background-color: #333333;
+  color: white;
+  border-radius: 40px;
+  padding: 60px;          /* Space between content and border */
+  width: 400px;   
+  }
+.toDo{
+  color: white;
+  background-color: #785F37;
+  
+}
+.horizontal-line {
+  border-bottom: 2px solid white; 
+  width: 100%;
+}
+.box{
+  width: 100px;
+  border: 3px solid #785F37;
+  padding: 100px;
+  border-radius: 10px;
+  border-color: #785F37;
+  margin: 10px;
+
+}
+.behind{
+  background-color: #785F37;
+  padding: 10px;
+  width: 400px;
+  text-align: center;
+  color: white;
+  
+}
+/**/
+
+/*For Sign Up Page*/
+.textbox[type="text"] {
+  width: 300px; /* Sets the width of the content area */
+  padding: 5px; /* Adds space inside the border */
+  border: 2px solid #ccc; /* Adds a solid border */
+  border-radius: 4px; /* Rounds the corners */
+  font-size: 16px; /* Sets the font size */
+  margin: 10px 0; /* Adds space outside the border, separating it from other elements */
+  border-color: #333333;
+}
+
+
+.signup{
+  background-color: #E9DBBD;
+  color: black;
+  padding: 12px;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: space-around ;
+  align-items: center; 
+ margin-top: 10vh;
+}
+
+.my-box {
+  border: 1px solid #CBB682; /* Creates the visible box border */
+  background-color: #CBB682;
+  border-radius: 40px;
+  padding: 60px;          /* Space between content and border */
+  width: 300px; 
+}
+
+.MainContainer{
+  display: flex;
+  justify-content: space-around ;
+  align-items: center; 
+  padding:20px;
+}
+
+.black_Button{
+  padding: 38px;
+  font-size: 28px;
+}
+
+.LeftContainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height:85vh;
+}
+
+.MiddleContainer{
+  align-items: center;
+}
+.RightContainer{
+  display: flex;;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height:85vh;
+}
+
+.navbar{
+  background-color: #CBB682;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+  
+}
+
+.numdropdown{
+  background-color: #333333;
+  color: white;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+h1{
+  font-size: 50px Bold;
+}
+h2{
+  font-size: 43px;
+}
+h3{
+  font-size: 30px Bold;
+}
+
+h4{
+  font-size: 38px;
+  margin:0px;
+}
+
+p{
+  font-size:32px;
+}
+
+button{
+  background-color: #333333;
+  border-radius: 10px;;
+  
+}
+
+.topButton{
+  font-size:30px;
+  padding:20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+
+/*Media Queries for Responsiveness*/
+
+@media screen and (max-width:480px) {
+  h1{font-size: 37px Bold;}
+  h2{font-size: 29px;}
+  h3{font-size: 39px Bold;}
+  h4{font-size: 36px;}
+  p{ font-size:27px;}
+  
+   .container {
+    display: flex;
+    justify-content: space-around ;
+    align-items: center; 
+   margin-right: 700vh;
+  }
+  .Pad{
+    width:95%;
+    margin-left:155px;
+    margin-top:750px;
+    
+  }
+
+  .textbox[type="text"] {
+    width: 150px; /* Sets the width of the content area */
+    padding: 5px; /* Adds space inside the border */
+    border: 2px solid #ccc; /* Adds a solid border */
+    border-radius: 4px; /* Rounds the corners */
+    font-size: 16px; /* Sets the font size */
+    margin: 10px 0; /* Adds space outside the border, separating it from other elements */
+    border-color: #333333;
+  }
+
+  .my-box {
+    border: 1px solid #CBB682; /* Creates the visible box border */
+    background-color: #CBB682;
+    border-radius: 40px;
+    padding: 40px;          /* Space between content and border */
+    width: 150px; 
+  }
+ 
+
+}
