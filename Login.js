@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
+    
 
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);

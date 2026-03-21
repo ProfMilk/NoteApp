@@ -16,6 +16,7 @@
             <button class="topButton"><a href="SignIn.html">Sign up</a></button> 
         </div>
     <h4 id="welcome"> Logged in as:_______ </h4>
+    <button id="logoutBtn" class="black_button">Logout</button>
     </div>
 
     <div class="MainContainer">
@@ -30,38 +31,34 @@
                 <option value="5">5</option>
                 <option value="6">6</option>
                 <option value="7">7</option>
+                  <option value="8">8</option>
+                    <option value="9">9</option>
+                      <option value="10">10</option>
             </select></h2> 
         
             <input class="textbox" type="text" name="textbox" required>
             <br>
-            <button class="black_button">Modify Task</button>
+            <button class="black_button" id="modifyBtn">Modify Task</button>
         </div>
-            <button class="black_button"> Previous page</button> 
+            
         </div>
         <div class="MiddleContainer">
             <h3>INPUT TO DO </h3>
-            <input class="textbox" type="text" id="userInput" r><br><br>
+            <input class="textbox" type="text" id="userInput"><br><br>
             
             <div class="toDo_box">
                 <h4 class="behind">NOTE|TAKERS</h4>
                     <div>
-                        <ul>
-                            <il id="output">1. ___________________________________</il><br>
-                            <il>2. ___________________________________</il><br>
-                            <il>3. ___________________________________</il><br>
-                            <il>4. ___________________________________</il><br>
-                            <il>5. ___________________________________</il><br>
-                            <il>6. ___________________________________</il><br>
-                            <il>7. ___________________________________</il><br>
-                        </ul>
+                        <ul id="todoList">
+                           
                     </div>     
             </div>
-            <button class="black_button"> Clear Checked Boxes</button>
+         
         </div>
 
         <div class="RightContainer">
-            <button type="submit" class="black_button" id="submitBtn">Add To List</button>
-            <button class="black_button"> Next page</button> 
+            <button type="submit" class="AddBtn" id="submitBtn">Add To List</button>
+            
         </div>
 
     </div>
@@ -69,6 +66,6 @@
      
     
     <script type="module" src="App.js"></script>
-    <script type ="module" src="Login.js"></script>
+   
 </body>
 </html>

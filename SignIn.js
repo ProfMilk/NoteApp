@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
  
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const name = document.getElementById("name").value;
+    const username = document.getElementById("username").value;
 
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Save user info to Firestore
       await setDoc(doc(db, "users", user.uid), {
-        name: name, 
+        username: username, 
         email: email,
         createdAt: serverTimestamp()
       });
