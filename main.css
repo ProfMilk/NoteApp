@@ -57,21 +57,21 @@ input{
   color: white;
   
 }
-/**/
 
-/*For Sign Up Page*/
+
+
 .textbox[type="text"] {
-  width: 300px; /* Sets the width of the content area */
-  padding: 5px; /* Adds space inside the border */
-  border: 2px solid #ccc; /* Adds a solid border */
-  border-radius: 4px; /* Rounds the corners */
-  font-size: 16px; /* Sets the font size */
-  margin: 10px 0; /* Adds space outside the border, separating it from other elements */
+  width: 300px; 
+  padding: 5px; 
+  border: 2px solid #ccc;
+  border-radius: 4px; 
+  font-size: 16px;
+  margin: 10px 0; 
   border-color: #333333;
 }
 
 .textbox{
-  width:50px;
+  width:121px;
 }
 
 .signup{
@@ -118,6 +118,8 @@ input{
 
 .MiddleContainer{
   align-items: center;
+  flex-direction: column;
+  display:flex;
 }
 .RightContainer{
   display: flex;;
@@ -133,6 +135,7 @@ input{
   display: flex;
   justify-content: space-between;
   padding:10px;
+  
   
 }
 
@@ -175,55 +178,118 @@ button{
   padding-right: 30px;
 }
 .AddBtn{
-  background:#CBB682;
- color:black;
-  font-size:30px;
+  background:#333333;
+ color:white;
+  font-size:25px;
   margin-top:180px;
-  margin-right:100px
+  margin-right:100px;
+  padding:10px;
 }
 
 
-
-
-/*Media Queries for Responsiveness*/
+/* Media queries for mobile */
 
 @media screen and (max-width:480px) {
+
+  html{
+    width:100%;
+    display:flex;
+  }
+
   h1{font-size: 37px Bold;}
   h2{font-size: 29px;}
   h3{font-size: 39px Bold;}
   h4{font-size: 36px;}
   p{ font-size:27px;}
   
-   .container {
+  .container {
     display: flex;
-    justify-content: space-around ;
+    flex-direction: column; 
     align-items: center; 
-   margin-right: 700vh;
+    margin-top: 0vh;
   }
+  
+  .my-image{
+    height:400px;
+  }
+
   .Pad{
     width:95%;
-    margin-left:155px;
-    margin-top:750px;
-    
   }
 
   .textbox[type="text"] {
-    width: 150px; /* Sets the width of the content area */
-    padding: 5px; /* Adds space inside the border */
-    border: 2px solid #ccc; /* Adds a solid border */
-    border-radius: 4px; /* Rounds the corners */
-    font-size: 16px; /* Sets the font size */
-    margin: 10px 0; /* Adds space outside the border, separating it from other elements */
+    width: 150px; 
+    padding: 5px; 
+    border: 2px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    margin: 10px 0; 
     border-color: #333333;
   }
 
   .my-box {
-    border: 1px solid #CBB682; /* Creates the visible box border */
+    border: 1px solid #CBB682;
     background-color: #CBB682;
     border-radius: 40px;
-    padding: 40px;          /* Space between content and border */
-    width: 150px; 
+    padding: 0px;         
+    width: 40vh;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
   }
- 
 
+  #signupForm{
+    width:30vh;
+  }
+
+  #email.textbox{
+    width:27vh;
+  }
+
+  #password.textbox{
+    width:27vh;
+  }
+
+  .navbar{
+    width:100%
+  }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  html{
+    width:100%;
+    display:flex;
+  }
+  
+  .container {
+  margin-top: 19vh; 
+  }
+  
+  .my-image{
+    height:450px;
+  }
+
+  .Pad{
+    width:95%;
+  }
+
+  .textbox[type="text"] {
+    width: 150px; 
+    padding: 5px; 
+    border: 2px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    margin: 10px 0; 
+    border-color: #333333;
+  }
+
+  .my-box {
+    border: 1px solid #CBB682;
+    background-color: #CBB682;
+    border-radius: 40px;
+    padding: 40px;         
+    width: 20vh; 
+  }
+  
 }
