@@ -70,6 +70,9 @@ input{
   border-color: #333333;
 }
 
+.textbox{
+  width:50px;
+}
 
 .signup{
   background-color: #E9DBBD;
@@ -100,9 +103,9 @@ input{
   padding:20px;
 }
 
-.black_Button{
-  padding: 38px;
-  font-size: 28px;
+.logoutbtn{
+  height:40px;
+  width:80px;
 }
 
 .LeftContainer{

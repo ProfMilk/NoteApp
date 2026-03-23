@@ -27,7 +27,7 @@ const logoutBtn = document.getElementById("logoutBtn");
 
 let currentUser = null;
 
-// 👤 Auth check
+
 onAuthStateChanged(auth, async (user) => {
     if (user) {
         currentUser = user;
@@ -41,14 +41,14 @@ onAuthStateChanged(auth, async (user) => {
     }
 });
 
-// 🚪 Logout
+
 logoutBtn.addEventListener("click", () => {
     signOut(auth).then(() => {
         window.location.href = "Login.html";
     });
 });
 
-// 🔢 Update numbering
+
 function updateNumbers() {
     const items = list.children;
 
@@ -59,7 +59,7 @@ function updateNumbers() {
     }
 }
 
-// 📥 Load tasks
+
 async function loadTasks() {
     list.innerHTML = "";
 
@@ -77,7 +77,7 @@ async function loadTasks() {
 
 function createTaskElement(id, value) {
     const li = document.createElement("li");
-    li.setAttribute("data-id", id); // 🔥 store Firestore ID
+    li.setAttribute("data-id", id); 
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
@@ -155,16 +155,16 @@ modifyBtn.addEventListener("click", async () => {
         return;
     }
 
-    // 🔥 Get Firestore ID from element
+  
     const taskId = item.getAttribute("data-id");
 
-    // 🔥 Update Firestore
+ 
     await updateDoc(
         doc(db, "users", currentUser.uid, "tasks", taskId),
         { text: newValue }
     );
 
-    // 🔥 Update UI
+
     const textSpan = item.querySelector("span");
     textSpan.setAttribute("data-text", newValue);
 
